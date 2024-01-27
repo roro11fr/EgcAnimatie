@@ -1,0 +1,22 @@
+• Rolul comenzilor GL.Push() și GL.Pop():
+
+GL.Push() salvează starea curentă a matricelor într-o stivă, iar GL.Pop() revine la starea salvată anterior. Aceasta ajută la gestionarea eficientă a transformărilor și evită interferențele între acestea.
+ Efectul metodelor GL.Rotate(), GL.Translate() și GL.Scale():
+
+GL.Rotate(angle, x, y, z): Rotește obiectul curent în jurul axei specificate cu un unghi.
+GL.Translate(x, y, z): Translează obiectul curent pe axele x, y și z.
+GL.Scale(x, y, z): Scalează obiectul curent pe axele x, y și z.
+Exemplu comentat:
+
+
+ Rotirea cu un unghi de 45 de grade în jurul axei Y
+GL.Rotate(45, 0, 1, 0);
+
+Translatarea cu 2 unități pe axa X, 3 unități pe axa Y și 0 unități pe axa Z
+GL.Translate(2, 3, 0);
+
+Scalarea cu un factor de 1.5 pe toate axele
+GL.Scale(1.5, 1.5, 1.5);
+• Numărul de nivele de manipulare ierarhică suportate de o scenă OpenGL:
+
+O scenă OpenGL suportă minim 32 de nivele de manipulare ierarhică utilizând GL.Push() și GL.Pop().
